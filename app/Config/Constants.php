@@ -78,6 +78,5 @@ defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest auto
 
 //'http://'.$_SERVER['HTTP_HOST']."/prattmullerskill.org/";
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'] : 'http://'.$_SERVER['HTTP_HOST'];
-defined('BASE') || define('BASE',$protocol."/krishna/codeigniter4_CRUD");
-
-defined('PUBLIC_URL') || define('PUBLIC_URL',$protocol."/krishna/codeigniter4_CRUD/public/");
+defined('BASE') || define('BASE',$protocol);
+defined('PUBLIC_URL') || define('PUBLIC_URL',$protocol);
